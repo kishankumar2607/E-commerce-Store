@@ -33,11 +33,11 @@ header {
   align-items: center;
 }
 
-.company-logo{
-    height: 60px;
-    width: 100%;
-    object-fit: cover;
-    cursor: pointer;
+.company-logo {
+  height: 60px;
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
 }
 
 /* navbar style */
@@ -60,18 +60,18 @@ header {
   margin-left: 2rem;
 }
 
-.bi{
-    font-size: 18px;
-    margin-right: 10px;
-    margin-top: 1px;
-    color: #de5f1e;
+.bi {
+  font-size: 18px;
+  margin-right: 10px;
+  margin-top: 1px;
+  color: #de5f1e;
 }
 
 .nav-bar a {
   position: relative;
   color: #de5f1e;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: none;
 }
 
@@ -92,6 +92,12 @@ header {
 
 .nav-bar a:hover::after {
   width: 100%;
+}
+
+/* Add this to your existing CSS */
+.nav-link.active {
+  color: #6319d1;
+  border-bottom: 2px solid #6319d1;
 }
 
 .menu-toggle {
@@ -128,6 +134,201 @@ header {
 }
 /* header style end */
 
+/* footer style start */
+
+.footer {
+  background-color: #333;
+}
+
+footer {
+  padding: 2.5rem 0rem;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 40px;
+  justify-items: left;
+  align-items: start;
+}
+
+.company-logo-footer {
+  height: 65px;
+  width: auto;
+  object-fit: cover;
+}
+
+.tagline {
+  max-width: 250px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.7;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+.heading {
+  font-weight: 700;
+  position: relative !important;
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+
+.links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.links ul li {
+  margin-bottom: 10px;
+  width: fit-content;
+}
+
+.links ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease-in;
+}
+
+.links ul li a:hover {
+  color: #de5f1e;
+}
+
+.timming table {
+  border-collapse: collapse;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.timming td {
+  padding-bottom: 10px;
+  border: none;
+}
+
+.timming td:first-child {
+  text-align: left;
+}
+
+.timming td:nth-child(2) {
+  text-align: center;
+  padding-left: 10px;
+}
+
+.timming td:last-child {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.address p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.address p a {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  text-decoration: none;
+  padding-left: 5px;
+  transition: all 0.3s ease-in;
+}
+
+.address p a:hover {
+  color: #de5f1e;
+}
+
+.heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.get-in-touch {
+  border: 2px solid #6319d1;
+  background-color: #6319d1;
+  width: 450px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.08);
+}
+
+.first-child {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+
+.second-child {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.last-child {
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+
+.last-child a {
+  font-weight: 600;
+  color: #ffffff;
+  transition: all 0.2s ease-in;
+}
+
+.last-child a:hover {
+  color: #fffb00;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+}
+
+.form-control:focus {
+  color: #000000 !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.input-box button {
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease-in;
+}
+
+.input-box button:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.copyright {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+}
+
+.copyright p {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  padding: 1rem 0rem;
+}
+
+/* footer style end */
 
 /* For screens from 992px */
 @media (max-width: 992px) {
@@ -188,10 +389,14 @@ header {
   }
 }
 
-
 /* For screens from 580px */
-@media (max-width: 580px){
-    .nav-bar li {
-        padding-left: 1rem;
-      }
+@media (max-width: 580px) {
+  .nav-bar li {
+    padding-left: 1rem;
+  }
+
+  .get-in-touch {
+    width: 100%;
+  }
+  
 }

@@ -1,36 +1,33 @@
-$(document).ready(function() {
-    // Initialize image slider
-    $('#slider').slider();
+// Get all nav links
+const navLinks = document.querySelectorAll('.nav-link');
 
-    // Contact form validation
-    $('#contactForm').on('submit', function(event) {
-        event.preventDefault();
-        let name = $('#name').val();
-        let email = $('#email').val();
-        let message = $('#message').val();
-        if (name && email && message) {
-            alert('Thank you for your message!');
-        } else {
-            alert('Please fill out all fields.');
-        }
-    });
+// Function to remove active class from all links
+function removeActiveClass() {
+  navLinks.forEach((link) => {
+    link.classList.remove('active');
+  });
+}
 
-    // Initialize accordion on about page
-    $('#accordion').accordion();
+// Function to add active class to the current link
+function setActiveClass() {
+  const currentUrl = window.location.pathname;
+  navLinks.forEach((link) => {
+    if (link.href.includes(currentUrl)) {
+      link.classList.add('active');
+    }
+  });
+}
 
-    // Placeholder for dynamic cart items
-    let cartItems = [
-        { name: 'Product 1', price: 29.99 },
-        { name: 'Product 2', price: 39.99 }
-    ];
+// Remove active class from all links and add active class to the current link on page load
+document.addEventListener('DOMContentLoaded', () => {
+  removeActiveClass();
+  setActiveClass();
+});
 
-    let $orderSummary = $('#orderSummary');
-    cartItems.forEach(item => {
-        $orderSummary.append(`<p>${item.name} - $${item.price.toFixed(2)}</p>`);
-    });
-
-    $('#checkoutForm').on('submit', function(event) {
-        event.preventDefault();
-        alert('Order placed successfully!');
-    });
+// Remove active class from all links and add active class to the clicked link
+navLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    removeActiveClass();
+    link.classList.add('active');
+  });
 });
