@@ -1,33 +1,32 @@
-// Get all nav links
-const navLinks = document.querySelectorAll('.nav-link');
-
-// Function to remove active class from all links
-function removeActiveClass() {
-  navLinks.forEach((link) => {
-    link.classList.remove('active');
+$(document).ready(function () {
+  $(".dishes").slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
-}
 
-// Function to add active class to the current link
-function setActiveClass() {
-  const currentUrl = window.location.pathname;
-  navLinks.forEach((link) => {
-    if (link.href.includes(currentUrl)) {
-      link.classList.add('active');
-    }
+  $("#nextBtn").click(function () {
+    $(".dishes").slick("slickNext");
   });
-}
 
-// Remove active class from all links and add active class to the current link on page load
-document.addEventListener('DOMContentLoaded', () => {
-  removeActiveClass();
-  setActiveClass();
-});
-
-// Remove active class from all links and add active class to the clicked link
-navLinks.forEach((link) => {
-  link.addEventListener('click', () => {
-    removeActiveClass();
-    link.classList.add('active');
+  $("#prevBtn").click(function () {
+    $(".dishes").slick("slickPrev");
   });
 });
