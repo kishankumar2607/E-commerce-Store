@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Menu - E-commerce Store</title>
+    <link rel="icon" type="image/x-icon" href="./image/logo/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Slick CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- Slick JS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="js/menu.js" defer></script>
+  </head>
+  <body>
+    <div class="header">
+      <header class="container">
+        <div class="site-name">
+          <a href="index.html">
+            <img
+              src="./image/logo/logo.svg"
+              alt="company-logo"
+              class="company-logo"
+            />
+          </a>
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <nav class="nav-bar">
+          <ul>
+            <li><a href="index.html" id="nav-link">Home</a></li>
+            <li><a href="about.html" id="nav-link">About Us</a></li>
+            <li><a href="menu.html" id="nav-link">Menu</a></li>
+            <li>
+              <a href="login.html" id="nav-link"
+                ><i class="bi bi-person-circle"></i>Login</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <main>
+      <div class="cuisines">
+        <h2 class="title">Explore our <span>menus</span></h2>
+        <div class="content container">
+          <div class="item" id="asian">
+            <img src="./image/menu/asian.jpg" alt="asian" />
+          </div>
+          <div class="item" id="american">
+            <img src="./image/menu/burger.jpg" alt="burger" />
+          </div>
+          <div class="item" id="indian">
+            <img src="./image/menu/indian.png" alt="Indian" />
+          </div>
+          <div class="item" id="japanese">
+            <img src="./image/menu/japanese.png" alt="Japanese" />
+          </div>
+          <div class="item" id="mexican">
+            <img src="./image/menu/mexican.png" alt="mexican" />
+          </div>
+          <div class="item" id="steak">
+            <img src="./image/menu/steak.png" alt="steak" />
+          </div>
+        </div>
+      </div>
+
+      <div class="explore-div">
+        <div class="container">
+          <h2 class="title">Explore <span>Asian</span></h2>
+          <div class="cuisine asian">
+            <div class="scroll-container">
+              <div class="Dish">
+                <img
+                  src="./image/menu/5f57d0b406c74fec9bf40c1ac1f3d83b.jpg"
+                  alt="Dish 1"
+                />
+                <p>Siomay - <span>$31</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/hamatsu.jpg" alt="Dish 2" />
+                <p>Hamamatsu Gyoza - <span>$21.78</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/korean.jpg" alt="Dish 3" />
+                <p>Korean Fried Chicken - <span>$29</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/pempek.jpg" alt="Dish 4" />
+                <p>Pempek - <span>$35</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/roti.jpg" alt="Dish 5" />
+                <p>Roti Canai - <span>$23</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/Rawon.jpg" alt="Dish 6" />
+                <p>Rawon - <span>$19.78</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/Samosa.jpg" alt="Dish 7" />
+                <p>Karipap - <span>$27</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/Soto.jpg" alt="Dish 8" />
+                <p>Soto Betawi - <span>$23</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/kai.jpg" alt="Dish 9" />
+                <p>Kaisendon - <span>$19</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/biang.jpg" alt="Dish 10" />
+                <p>Biang Biang Noodles - <span>$29</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+            <button class="scroll-button scroll-left">
+              <i class="bi-icon bi-caret-left-fill"></i>
+            </button>
+            <button class="scroll-button scroll-right">
+              <i class="bi-icon bi-caret-right-fill"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="explore-div">
+        <div class="container">
+          <h2 class="title">Popular <span>Dishes</span></h2>
+          <div class="cuisine Popular">
+            <div class="scroll-container">
+              <div class="Dish dish-padding">
+                <img
+                  src="./image/Home-page/vegan-buddha-bowl.png"
+                  alt="Dish 1"
+                />
+                <p>Vegan Buddha Bowl - <span>$25</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish dish-padding">
+                <img src="./image/Home-page/Egg-salad.png" alt="Dish 2" />
+                <p>Egg Salad - <span>$23</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish dish-padding">
+                <img src="./image/Home-page/Fattoush-salad.png" alt="Dish 3" />
+                <p>Fattoush Salad - <span>$24</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish dish-padding">
+                <img src="./image/Home-page/grilled-chicken.png" alt="Dish 4" />
+                <p>Grilled Chicken - <span>$28</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish dish-padding">
+                <img
+                  src="./image/Home-page/spaghetti-carbonara.png"
+                  alt="Dish 5"
+                />
+                <p>Spaghetti carbonara - <span>$22</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish dish-padding">
+                <img src="./image/Home-page/Vegetable-salad.png" alt="Dish 6" />
+                <p>Vegetable Salad - <span>$26</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+            <button class="scroll-button scroll-left">
+              <i class="bi-icon bi-caret-left-fill"></i>
+            </button>
+            <button class="scroll-button scroll-right">
+              <i class="bi-icon bi-caret-right-fill"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="explore-div">
+        <div class="container">
+          <h2 class="title">Explore Indian <span>Dishes</span></h2>
+          <div class="cuisine indian">
+            <div class="scroll-container">
+              <div class="Dish">
+                <img src="./image/menu/buttern.jpg" alt="Dish 1" />
+                <p>Butter Garlic Naan - <span>$18</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/kulcha.jpg" alt="Dish 2" />
+                <p>Amritsar kulcha - <span>$21</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/tikka.jpg" alt="Dish 3" />
+                <p>Chicken Tikka - <span>$25</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/chole.jpg" alt="Dish 4" />
+                <p>Chole Bhature - <span>$17</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/hyd.jpg" alt="Dish 5" />
+                <p>Hyderabad Biryani - <span>$28</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/tand.jpg" alt="Dish 6" />
+                <p>Tandoori Chicken - <span>$32</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/dal.jpg" alt="Dish 7" />
+                <p>Dal Tadka - <span>$17</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/dosa.jpg" alt="Dish 8" />
+                <p>Masala Dosa - <span>$23</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/65.jpg" alt="Dish 9" />
+                <p>Chicken 65 - <span>$21</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/kaju.jpg" alt="Dish 10" />
+                <p>Kaju Katli - <span>$24</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+            <button class="scroll-button scroll-left">
+              <i class="bi-icon bi-caret-left-fill"></i>
+            </button>
+            <button class="scroll-button scroll-right">
+              <i class="bi-icon bi-caret-right-fill"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="explore-div">
+        <div class="container">
+          <h2 class="title">Explore <span>Steak</span></h2>
+          <div class="cuisine steak">
+            <div class="scroll-container">
+              <div class="Dish">
+                <img src="./image/menu/galbi.jpg" alt="Dish 1" />
+                <p>Galbi - <span>$29</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/gyudon.jpg" alt="Dish 2" />
+                <p>Gyudon - <span>$29</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/chate.jpg" alt="Dish 3" />
+                <p>Chateaubriand - <span>$32</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img
+                  src="./image/menu/bc7c80192db2460b9c8c7af288d1ac34.jpg"
+                  alt="Dish 4"
+                />
+                <p>Pot Roast - <span>$35</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/surf.jpg" alt="Dish 5" />
+                <p>Surf and Turf - <span>$29</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/Ansium.jpg" alt="Dish 6" />
+                <p>Ansim - <span>$32</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/picanha.jpg" alt="Dish 7" />
+                <p>Picanha - <span>$31</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/pepper.jpg" alt="Dish 8" />
+                <p>Pepper Steak - <span>$21</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/beef.jpg" alt="Dish 9" />
+                <p>Beef Stronganoff - <span>$24</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/fries.jpg" alt="Dish 10" />
+                <p>Steak and fries - <span>$23</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+            <button class="scroll-button scroll-left">
+              <i class="bi-icon bi-caret-left-fill"></i>
+            </button>
+            <button class="scroll-button scroll-right">
+              <i class="bi-icon bi-caret-right-fill"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="explore-div">
+        <div class="container">
+          <h2 class="title">Explore Japanese <span>Dishes</span></h2>
+          <div class="cuisine japanese">
+            <div class="scroll-container">
+              <div class="Dish">
+                <img src="./image/menu/yokohoma.jpg" alt="Dish 1" />
+                <p>Yokohama style Ramen- <span>$25</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/kare.jpg" alt="Dish 2" />
+                <p>Kare - <span>$21</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/karage.jpg" alt="Dish 3" />
+                <p>Karaage - <span>$27</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/ajitsu.jpg" alt="Dish 4" />
+                <p>Ajitsuke tamago - <span>$16</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/goma.jpg" alt="Dish 5" />
+                <p>Goma dare - <span>$17</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/shabu.jpg" alt="Dish 6" />
+                <p>Shabu Shabu - <span>$24</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/chasu.jpg" alt="Dish 7" />
+                <p>Chasu - <span>$25</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/udon.jpg" alt="Dish 8" />
+                <p>kare udon- <span>$27</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/nikuman.jpg" alt="Dish 9" />
+                <p>Nikuman - <span>$16</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/takoyaki.jpg" alt="Dish 10" />
+                <p>Takoyaki - <span>$25</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+            <button class="scroll-button scroll-left">
+              <i class="bi-icon bi-caret-left-fill"></i>
+            </button>
+            <button class="scroll-button scroll-right">
+              <i class="bi-icon bi-caret-right-fill"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="explore-div">
+        <div class="container">
+          <h2 class="title">Explore Mexican <span>Dishes</span></h2>
+          <div class="cuisine mexican">
+            <div class="scroll-container">
+              <div class="Dish">
+                <img src="./image/menu/carnitas.jpg" alt="Dish 1" />
+                <p>Carnitas - <span>$28</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/carne.jpg" alt="Dish 2" />
+                <p>Carne asada tacos - <span>$27</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/esquites.jpg" alt="Dish 3" />
+                <p>Esquites - <span>$32</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/Cochina.jpg" alt="Dish 4" />
+                <p>Cochinita Pibil - <span>$33.98</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/chilorio.jpg" alt="Dish 5" />
+                <p>Chilorio - <span>$31.65</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/antojitos.jpg" alt="Dish 6" />
+                <p>Antojitos - <span>$28</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/sopa.jpg" alt="Dish 7" />
+                <p>Sopa Tarasca - <span>$31</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/guavca.jpg" alt="Dish 8" />
+                <p>Guacamole - <span>$24</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/barbacoa.jpg" alt="Dish 9" />
+                <p>Barbacoa - <span>$27</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+              <div class="Dish">
+                <img src="./image/menu/chilaquiles.jpg" alt="Dish 10" />
+                <p>Chilaquiles - <span>$29</span></p>
+                <button class="add-to-cart">Add to Cart</button>
+              </div>
+            </div>
+            <button class="scroll-button scroll-left">
+              <i class="bi-icon bi-caret-left-fill"></i>
+            </button>
+            <button class="scroll-button scroll-right">
+              <i class="bi-icon bi-caret-right-fill"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+<!-- 
+    <div class="payment-container">
+      <form class="payment-form">
+        <h3>Payment Details</h3>
+        <div class="form-group">
+          <label for="card-number">Card Number</label>
+          <input
+            type="text"
+            id="card-number"
+            placeholder="Card Number"
+            maxlength="16"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="cvv">CVV</label>
+          <input
+            type="text"
+            id="cvv"
+            placeholder="CVV"
+            maxlength="3"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="expiry-date">Expiry Date</label>
+          <input
+            type="text"
+            id="expiry-date"
+            placeholder="MM/YY"
+            maxlength="5"
+            required
+          />
+        </div>
+        <button type="submit" class="pay-button">Pay Now</button>
+      </form>
+      <div class="card-logos">
+        <img src="./image/menu/visa.png" alt="Visa" title="Visa" />
+        <img
+          src="./image/menu/master card.png"
+          alt="MasterCard"
+          title="MasterCard"
+        />
+        <img
+          src="./image/menu/American-Express-logo.png"
+          alt="American Express"
+          title="American Express"
+        />
+        <img
+          src="./image/menu/discover-card-logo-FAC18D3C2D-seeklogo.com.png"
+          alt="Discover"
+          title="Discover"
+        />
+      </div>
+    </div>
+    <br /><br /><br /><br />
+     -->
+    <div class="footer">
+      <footer class="container">
+        <div class="logo-tagline">
+          <a href="index.html">
+            <img
+              src="./image/logo/footer-logo.svg"
+              alt="company-logo"
+              class="company-logo-footer"
+            />
+          </a>
+          <p class="tagline">
+            Discover Endless Possibilities, Shop with Ease, and Enjoy Exclusive
+            Deals – Your Ultimate One-Stop Online Store!
+          </p>
+        </div>
+        <div class="links">
+          <h4 class="heading">Get to Know US</h4>
+          <ul>
+            <li><a href="#">Our Company</a></li>
+            <li><a href="#">Digital Museum</a></li>
+            <li><a href="#">Our Suppliers</a></li>
+            <li><a href="#">Corporate Responsibility</a></li>
+            <li><a href="#">Career</a></li>
+          </ul>
+        </div>
+        <div class="links">
+          <h4 class="heading">Customer Service</h4>
+          <ul>
+            <li><a href="#">Track orders</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Pickup & Delivery</a></li>
+            <li><a href="#">Product Recalls</a></li>
+            <li><a href="#">Safety Data Sheet</a></li>
+            <li><a href="#">Tax Exempt Program</a></li>
+            <li><a href="#">Manage cookie settings</a></li>
+          </ul>
+        </div>
+        <div class="address">
+          <h4 class="heading">Contact Us</h4>
+          <p>123 Main St, Cambridge, N3H 4J9, Ontario, Canada</p>
+          <p>Mobile: <a href="tel:+1 (123) 456-7890">+1 (123) 456-7890</a></p>
+          <p>
+            Email:
+            <a href="mailto:hello@clickandcollect.com"
+              >hello@clickandcollect.com</a
+            >
+          </p>
+        </div>
+
+        <div class="timming">
+          <h4 class="heading">Time</h4>
+          <table>
+            <tr>
+              <td>Monday</td>
+              <td>:</td>
+              <td>08:00AM - 10:00PM</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>:</td>
+              <td>08:00AM - 10:00PM</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>:</td>
+              <td>08:00AM - 10:00PM</td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td>:</td>
+              <td>08:00AM - 10:00PM</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>:</td>
+              <td>08:00AM - 10:00PM</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>:</td>
+              <td>08:00AM - 10:00PM</td>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td>:</td>
+              <td>08:00AM - 10:00PM</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="links">
+          <h4 class="heading">Stores</h4>
+          <ul>
+            <li><a href="#">Store Directory</a></li>
+            <li><a href="#">Find a Store</a></li>
+            <li><a href="#">Flash Picks/Deals</a></li>
+            <li><a href="#">All Department</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="heading">Subscribe</h4>
+          <div class="get-in-touch">
+            <p class="first-child">Be in the know!</p>
+            <p class="second-child">
+              Get up-to-date information on weekly flyer features, Rollback &
+              clearance items, exclusive products, and offers. You can
+              unsubscribe at any time.
+            </p>
+            <div class="input-box">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Email"
+              />
+              <button>Subscribe</button>
+            </div>
+            <p class="last-child second-child">
+              Personal information may be collected and used in accordance with
+              our <a href="#">Privacy Notice</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="copyright">
+      <p>Copyright &copy; 2024 Click & Collect. All Rights Reserved.</p>
+    </div>
+  </body>
+</html>
