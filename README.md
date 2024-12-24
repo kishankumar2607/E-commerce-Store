@@ -9,12 +9,6 @@ An engaging and feature-rich e-commerce website designed to provide a seamless o
 - [Overview](#overview)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Screenshots](#screenshots)
-- [License](#license)
-- [Contact](#contact)
 
 ---
 
